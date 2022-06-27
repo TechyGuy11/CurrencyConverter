@@ -18,6 +18,9 @@ root = Tk()
 root.geometry('500x300')
 root.configure(bg=bg)
 root.resizable(False, False)
+img = PhotoImage(file="Assets/favicon.png")
+root.iconphoto(False, img)
+
 
 def convert_currency():
     currency = currencyFromMoney.get()
